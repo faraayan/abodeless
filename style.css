@@ -1,0 +1,93 @@
+/* FONTS */
+@font-face {
+  font-family: "National Bold";
+  src: url("fonts/national-web-bold.ttf");
+}
+
+@font-face {
+  font-family: "National Regular";
+  src: url("fonts/national-web-regular.ttf");
+}
+
+@font-face {
+  font-family: "Recoleta Bold";
+  src: url("fonts/Recoleta-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Recoleta Medium";
+  src: url("fonts/Recoleta-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Recoleta Regular";
+  src: url("fonts/Recoleta-Regular.ttf");
+}
+
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: "National Regular";
+  background-color: ;
+}
+
+h1{
+  font-family: "Recoleta Bold";
+  font-size: 50px;
+  margin: 0px 0px 5px 0px;
+}
+
+p{
+  font-size: 23px;
+  margin: 0px;
+}
+
+#title{
+  background-color: #FED58C;
+  padding: 0px;
+  margin: 0px;
+}
+
+.text{
+  width: 650px;
+  margin: 0 auto;
+  padding: 80px 0px;
+}
+
+#title h1{
+  color: #83560B;
+}
+
+#title p{
+  color: #6C4D17;
+}
+
+#orange{
+  background-color: #F06E1D;
+  padding: 0px;
+  margin: 0px;
+}
+
+#orange h1{
+  color: #FED58C;
+  font-size: 40px;
+}
+
+#orange p{
+  color: #FED58C;
+}
+
+img {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1224px;  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  margin-bottom: -30px;
+}
+
+
+
