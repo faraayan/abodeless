@@ -54,7 +54,11 @@ p{
 .text{
   width: 650px;
   margin: 0 auto;
-  padding: 110px 0px 70px 0px;
+  padding: 130px 0px 0px 0px;
+}
+
+.text p{
+  padding-bottom: 10px;
 }
 
 #title h1{
@@ -85,11 +89,12 @@ p{
   min-height: 100%;
   min-width: 1224px;
   max-width: 100%;
-  margin-bottom: -30px;
+  margin-bottom: -100px;
   overflow: hidden;
 }
 
 #crack{
+  margin-top: 100px;
   position: relative;
   min-height: 100%;
   min-width: 1000px;
@@ -181,6 +186,7 @@ nav {
 }
 
 #black{
+  margin-top: -100px;
   background-color: #37302C;
   padding: 30px 0px;
 }
@@ -235,6 +241,34 @@ nav {
   text-decoration: none;
   color: #B58F4F;
   font-size: 20px;
+}
+
+#track{
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
+#yellow{
+  background-color: #FFD794;
+}
+
+#yellow .text{
+  color: #37302C;
+}
+
+#yellow h1{
+  color: #D65F14
+}
+
+.data{
+  padding: 15px;
+  border: #FED58C 2px solid;
+  background-color: #332B27;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .active{
