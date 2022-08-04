@@ -48,6 +48,7 @@ p{
   background-color: #FED58C;
   padding: 0px;
   margin: 0px;
+  padding-top: 60px;
 }
 
 .text{
@@ -210,3 +211,61 @@ nav {
   padding-bottom: 200px;
 }
 
+/* NAV */
+.nav{
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #FFE4B4;
+}
+
+.nav img{
+  padding: 20px 20px 20px 40px;
+}
+
+.nav div{
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px 20px 0px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: #B58F4F;
+  font-size: 20px;
+}
+
+.active{
+  color: #83560B;
+}
+
+ul {
+  position: fixed;
+  right: 10px;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+}
+
+
+h2{
+
+}
