@@ -53,7 +53,7 @@ p{
 .text{
   width: 650px;
   margin: 0 auto;
-  padding: 80px 0px;
+  padding: 110px 0px 70px 0px;
 }
 
 #title h1{
@@ -77,17 +77,136 @@ p{
 
 #orange p{
   color: #FED58C;
+  margin-bottom: 6px;
 }
 
-img {
-  /* Set rules to fill background */
+#city {
   min-height: 100%;
-  min-width: 1224px;  
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
+  min-width: 1224px;
+  max-width: 100%;
   margin-bottom: -30px;
+  overflow: hidden;
+}
+
+#crack{
+  position: relative;
+  min-height: 100%;
+  min-width: 1000px;
+  max-width: 100%;
+  height: auto;
+}
+
+#crack img, #crack p {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#crack img{
+  margin-bottom: -50px;
+}
+
+#crack p {
+  z-index: 10;
+  top: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.underline{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #F06E1D;
+}
+
+.cloud2{
+  position: absolute;
+  width: 270px;
+  top: 25px;
+  -webkit-animation: bezier infinite;
+  -webkit-animation-name: wind2;
+  -webkit-animation-duration: 45s;
 }
 
 
+.cloud{
+  position: absolute;
+  width: 200px;
+  bottom: 40px;
+  -webkit-animation: bezier infinite;
+  -webkit-animation-name: wind;
+  -webkit-animation-duration: 25s;
+}
+
+@-webkit-keyframes wind2 {
+  0% {
+    right: 0%;
+  }
+  12%{
+    right: 5%;
+  }
+  25%{
+    right: 0%;
+  }
+  50% {
+    right: 20%;
+  }
+  100% {
+    right: 0%;    
+  }
+}
+
+@-webkit-keyframes wind {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 10%;
+  }
+  100% {
+    left: 0;    
+  }
+}
+
+nav {
+  padding: 20px 25px;
+}
+#logo {
+  width:  90px;
+}
+
+#container{
+  display: flex;
+}
+
+#black{
+  background-color: #37302C;
+  padding: 30px 0px;
+}
+
+#black h1{
+  color: #FED58C;
+}
+
+#black p{
+   color: #FED58C;
+}
+
+#button{
+  width: 20px;
+  padding: 0px 10px;
+}
+
+#data{
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #4D443E;
+  border-radius: 25px;
+}
+
+
+#space{
+  padding-bottom: 200px;
+}
 
