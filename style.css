@@ -202,18 +202,34 @@ a{
   color: #574746
 }
 
+#transportation h2{
+  font-family: "Recoleta Bold";
+  font-size: 30px;
+  margin: 20px 0px 0px 0px;
+  color: #1468AD;
+}
+
 #transportation p{
   color: #37302C;
 }
 
+#transportation .data-text{
+  padding: 15px;
+  background-color: #EEDFC9;
+  border: #FEF5E9 3px solid;
+  border-radius: 15px;
+  margin-top: -2px;
+}
+
 #bus{
+  margin-top: 20px;
   width: 100%;
 }
 
 #transportation .bus{
   margin-top: -420px;
   margin-left: 85px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
 #transportation .bus iframe{
@@ -221,6 +237,7 @@ a{
 }
 
 #sign{
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -247,8 +264,24 @@ a{
   color: #F7ECDC;
 }
 
+#education h2{
+  font-family: "Recoleta Bold";
+  font-size: 30px;
+  margin: 20px 0px 0px 0px;
+  color: #FFD794;
+}
+
 #education p{
   color: #E2D3BD;
+}
+
+#education .data-text{
+  padding: 15px;
+  background-color: #483837;
+  border: #6D5E5D 3px solid;
+  border-radius: 15px;
+  margin-top: -30px;
+  margin-bottom: 80px;
 }
 
 #education .scroll{
@@ -260,6 +293,18 @@ a{
 #scroll{
   width: 100%;
 }
+
+/* SO WHAT */
+#sowhat{
+  background-color: #FFD794;
+  padding: 0px;
+  margin: 0px;
+  padding: 0px 0px 140px 0px;
+}
+#sowhat h1, p{
+  color: #574746;
+}
+
 
 .text{
   width: 650px;
