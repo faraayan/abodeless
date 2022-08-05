@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.png">
   <title>Abodeless</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -13,21 +14,20 @@
   <div class="nav">
     <a href="index.html"><img id = "logo" src="img/logo.png"></a>
     <div>
-      <a class="active" href="/">Problem</a>
-      <a href="solutions.html">Solutions</a>
-      <a href="/about">About us</a>
+      <a class="active" href="/">Our data</a>
+      <a href="/solutions.html">Solutions</a>
+      <a href="/about.html">About us</a>
     </div>
   </div>
-  <div id = "title">
-  <img class = "cloud2" src="img/cloud2.png">
-  <div class = "text">
-    <h1>We want to give you a closer look at the <span class = "underline">housing crisis</span>.</h1>
-    <p>City infrastructure such as public transportation and school systems in the Bay Area, are widening the wealth and education gap between lower and middle class residents because of high housing rates.</p>
+  <div id = "landing">
+    <div class = "text">
+      <h1>We want to give you a closer look at the housing crisis.</h1>
+      <p>City infrastructure such as public transportation and school systems in the Bay Area, are widening the wealth and education gap between lower and middle class residents because of high housing rates.</p>
+      <a href="#intro"><div style = "margin-top: 10px" class = "button">Learn more</div></a>
+    </div>
+    <img id = "city" style = "  overflow: hidden;" src="img/cityscape.png">
   </div>
-  <img class = "cloud" src="img/cloud1.png">
-  <img id = "city" style = "  overflow: hidden;" src="img/cityscape.png">
-  </div>
-  <div id = "orange">
+  <div id = "intro">
     <div class = "text">
       <h1>Since 2012, housing rates in the Bay Area have risen rapidly, resulting in a housing crisis.</h1>
       <p>If you live in the Bay Area, you’ve likely noticed that housing prices have skyrocketed in the past decade. These unaffordable housing prices have led to poverty, homelessness, pollution, and increased product prices.</p>
@@ -38,49 +38,76 @@
       <img src="img/crack.png">
     </div>
   </div>
-  <div id = "black">
+  <div id = "overview">
     <div class = "text">
+      <div id = "choose">
+        <a href="#overview">Overview</a>
+        <a href="#transportation">Transporation</a>
+        <a href="#education">Education</a>
+      </div>
       <h1>What's changed?</h1>
       <p>Click<span><img id = "button" src="img/timelinebutton.png"></span>to view the change of Bay Area housing prices from 2014 to 2022.</p>
-      <div id = "data">
+      <div class = "data">
         <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 600px; height: 477px;'><object class='tableauViz' width='600' height='477' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;abodeless' /><param name='name' value='MedianHomePrices&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
       </div>
       <br><br><br>
       <h1>Who's affected?</h1>
       <p>Due to the high housing prices in the Bay Area, there is an increased percentage of citizens qualified as cost burdened based on income range. Citizens quality as cost burdened when over 30% of income goes into housing payments. This factor leaves individuals troubled with affording necessities such as food, clothing, transportation, and medical care.</p>
       <p>Let's compare the percentage of cost burdened individuals from two Bay Area cities, San Francisco and San Jose, with the national average.</p>
-      <div id = "data">
+      <div class = "data">
         <iframe width="600" height="240" src="https://datastudio.google.com/embed/reporting/6eeebb21-4da1-48ad-a81d-0760d8f05fe6/page/83OzC" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <p class = "data">While the percentages of the <15k and 15k-30k income brackets don't have a significant difference, people who make over 30k struggle more in the Bay Area than other areas of the US. The difference comes towards around double or triple more people struggling with cost burden.</p>
+      <p class = "data-text">While the percentages of the <15k and 15k-30k income brackets don't have a significant difference, people who make over 30k struggle more in the Bay Area than other areas of the US. The difference comes towards around double or triple more people struggling with cost burden.</p>
+     <!-- <img id = "affected" src="img/affected.png" alt=""> -->
       <br><br><br>
     </div>
   </div>
     <img id = "track" src="img/track.png">
-  <div id = "yellow">
+  <div id = "transportation">
     <div class = "text">
-      <h1>Public Transportation</h1>
-      <p>Here we see the toll fees for different bridges across the US. You'll notice that at the top, we have the Golden Gate Bridge, and the Bay Bridge. Two bridges are located in the Bay Area. It is important to note that all bridges in California have an individual toll fee of $7, but compare that to the rest of the country, and you will notice a big difference. <br> All Bay Area toll bridges only charge in one direction. Both to save commuters time and reduce gridlock in San Francisco.</p>
-      <br>
-      <iframe width="550" height="280" src="https://datastudio.google.com/embed/reporting/9fd60436-cb81-4754-8066-094e1344486c/page/e4NzC" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <h1>Where you <span style = "color: #FF8940;">live</span> impacts the way you <span style = "color: #FF8940;">travel</span>.</h1>
+      <h2>Taking public transport</h2>
+      <p>Bay Area's dense streets make public transport one of the most efficient ways to move around cities. Some of the most popular public transport systems in the Bay Area are displayed in the graph below.</p>
+      <p>We mapped the the relationship between the Bay Area Public Transport Network and the socioeconomic status of people who use them on a daily basis.</p>
+      <img id = "bus" src="img/bus.png" alt="">
+      <div class = "data bus">
+        <iframe width="550" height="280" src="https://datastudio.google.com/embed/reporting/9fd60436-cb81-4754-8066-094e1344486c/page/e4NzC" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <br><br>
-      <p>One-third of people who use bridges to travel in California, travel on the Bay Bridge alone. Imagine how many commuters must be traveling on other Caltrans-owned Bay Area bridges. </p>
-      <p>7897670 people use the BART, that's only 5% of commuters using Caltrans bridges. The average BART fare is $3.50 per individual, this is far less than the individual toll fee of any Caltrans owned bridges.</p>
+      <p class = "data-text">We found that the Sam Trans, VTA, SFMTA, and AC Transit have over 50% commuters with incomes under 50k. All of these transit systems, are used more locally, especially in lower income areas of the Bay Area.</p>
       <br>
-      <iframe width="600" height="296" src="https://datastudio.google.com/embed/reporting/9d3345bd-6e3c-4ad5-97f7-c49f0fd4c659/page/uIPzC" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-      <p>This graph represents the different Bay Area Public Transport Systems and how many people use them on a daily basis. The darker orange is the total number of people using public transport, and the orange is the number of people using public transport with incomes under $50k.</p>
-      <p>Sam Trans, VTA, SFMTA, and AC Transit have over 50% commuters with incomes under 50k. All of these transit systems, are used more locally, especially in lower income areas of the Bay Area.</p>
-      <iframe width="400" height="300" src="https://datastudio.google.com/embed/reporting/00be2696-3985-4a44-97e5-41e776787011/page/bBUzC" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <h2>Traveling across bridges</h2>
+      <p>On the graph below, we have displayed six of the most used bridges in the US. On the very left we have displayed two of the bridges in the Bay Area: the Golden Gate Bridge and the Bay Bridge. All the bridges in California have an individual toll fee of $7. However, compared to the rest of the country, this is a large difference.</p>
+      <p>It is important to note that all Bay Area toll bridges only charge in one direction. This saves both time and reduces gridlock for commuters.</p>
+      <img id = "sign" src="img/sign.png" alt="">
+      <div class = "data sign">
+        <iframe width="600" height="296" src="https://datastudio.google.com/embed/reporting/9d3345bd-6e3c-4ad5-97f7-c49f0fd4c659/page/uIPzC" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <p class = "data-text">We noticed that the bridges in California have an individual toll fee of at least $7. When compared to the rest of the country, with bridges such as the right-most four, this sets forth a large difference.</p>
+     <!--
+      <div id = "data">
+        <iframe width="400" height="300" src="https://datastudio.google.com/embed/reporting/00be2696-3985-4a44-97e5-41e776787011/page/bBUzC" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <p>Transportation is the third‐largest budget item for low income households in California’s metropolitan areas. For low income households, only housing and food expenditures  constitute larger budget shares than transportation expenditures.</p>
       <p>"Although low income households may find ways to cover their transportation expenditures, there are trade‐offs that have negative effects on their lifestyles, including increased stress and anxiety about ability to pay, reduced expenditures on  necessities such as food, inability to participate in discretionary activities, and spatial entrapment in the neighborhood around their homes." (Metropolitan Transportation Commission)</p>
       <p>In the Bay area, transportation costs are higher in less dense communities. Due to this, transit services are not as easily accessible. In consequence, these communities have fewer alternatives to the automobile (ex. Napa and Solano counties). On the flipside,transportation costs are lower in  more dense communities where households can use transit to get around, such as San Francisco and Oakland. But the graphs above show that still in San Francisco and Oakland, public transportation is more frequently used in low-income communities.</p>
       <p>"Avoiding or reducing dependency on vehicle ownership has a significant economic benefit for low income households." (Metropolitan Transportation Commission)</p>
-
-      <h1>Education</h1>
-      <p></p>
-      <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 700px; height: 527px;'><object class='tableauViz' width='700' height='527' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;abodeless' /><param name='name' value='GraudationRates&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+    -->
     </div>
+  </div>
+  <img id = "letter" src="img/letters.png">
+  <div id = "education">
+    <div class = "text">
+      <h1>Where you <span style = "color: #FF8940;">live</span> impacts how you <span style = "color: #FF8940;">learn</span>.</h1>
+      <p></p>
+      <img id = "scroll" src="img/scroll.png" alt="">
+      <div class = "data scroll">
+        <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 500px; height: 527px;'><object class='tableauViz' width='500' height='527' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;abodeless' /><param name='name' value='GraudationRates&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+      </div>
+      <p>The graphs above show a slight positive correlation between home prices and graduation rates, graduates earning a golden state seal merit diploma, graduates earning a seal of biliteracy, and graduates meeting UC/CSU requirements.</p>
+      <p>Additionally, Census data from 2006 through 2010 shows that where you live can heavily impact your educational success. Children who live in wealthy school districts have among the best schools in the nation based on graduation rates, test scores and independent ratings of academic success. Residents who attend these schools are more likely to earn a college degree than the national average, which is about 85%.</p>
+    </div>
+    <br><br><br>
   </div>
 
 <!--
@@ -94,6 +121,9 @@
         <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 700px; height: 527px;'><object class='tableauViz' width='700' height='527' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;abodeless' /><param name='name' value='GraudationRates&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
       </div>
     </div>-->
+      <div id = "footer">
+        <p>Made with 💖 by Aarna, Evelyn, Sahra, and Fara, at the <a href="https://www.kodewithklossy.com/" target = "_blank">Kode with Klossy</a> SF Data Science Camp!</p>
+    </div>
 </body>
 
 </html>
