@@ -295,6 +295,10 @@ a{
 }
 
 /* SO WHAT */
+#squigg{
+  margin-top: -30px;
+  width: 100%;
+}
 #sowhat{
   background-color: #FFD794;
   padding: 0px;
